@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+  --ink: #1c1914;
+  --muted: #6d655c;
+  --line: #ddd4c6;
+  --paper: #f7f3eb;
+  --card: #fffdf8;
+  --accent: #1c1914;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: var(--paper); color: var(--ink); font-family: Georgia, "Times New Roman", serif; }
+button, input { font: inherit; }
+#app { max-width: 32rem; margin: 0 auto; min-height: 100vh; padding: 1rem 1rem 5.5rem; }
+h1 { font-size: 1.7rem; margin: 0.2rem 0; letter-spacing: -0.02em; }
+h2 { font-size: 1.05rem; margin: 0; }
+p { line-height: 1.4; }
+.muted { color: var(--muted); }
+.top { display: flex; justify-content: space-between; gap: 0.75rem; align-items: center; margin-bottom: 0.8rem; }
+.tabs { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 0.4rem; padding: 0.55rem 0.7rem calc(0.55rem + env(safe-area-inset-bottom)); background: var(--paper); border-top: 1px solid var(--line); }
+.tabs button { flex: 1; min-height: 2.8rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); }
+.tabs button.current { background: var(--accent); color: #fff; }
+.auth, .card, .item, .bill { background: var(--card); border: 1px solid var(--line); border-radius: 0.9rem; padding: 0.9rem; margin: 0 0 0.7rem; }
+label { display: grid; gap: 0.3rem; margin: 0.55rem 0; font-size: 0.92rem; }
+input { min-height: 2.7rem; border: 1px solid var(--line); border-radius: 0.6rem; padding: 0.4rem 0.7rem; background: #fff; }
+.picks { display: flex; gap: 0.4rem; margin-bottom: 0.4rem; }
+.picks button { flex: 1; }
+button.primary, button.ghost, button.danger { min-height: 2.7rem; border-radius: 0.7rem; padding: 0.4rem 0.8rem; }
+button.primary { background: var(--accent); color: #fff; border: 0; width: 100%; }
+button.ghost { background: #fff; border: 1px solid var(--line); }
+button.danger { background: #fff; border: 1px solid #111; }
+.error { background: #fff; border: 1px solid #111; border-radius: 0.7rem; padding: 0.7rem 0.8rem; font-weight: 700; }
+.item, .line { display: flex; justify-content: space-between; gap: 0.6rem; align-items: center; }
+.item button, .qty button { min-height: 2.3rem; min-width: 2.3rem; }
+.qty { display: flex; align-items: center; gap: 0.35rem; }
+.pay { display: grid; grid-template-columns: 1fr 1fr; gap: 0.45rem; }
+.pay button.current { background: var(--accent); color: #fff; }
+img.proof, img.bank { width: 100%; max-height: 180px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 0.6rem; }
+.bill-no { font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }

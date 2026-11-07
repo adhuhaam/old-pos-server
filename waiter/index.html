@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#111111">
+  <script>
+    try {
+      if (localStorage.getItem('cafe_pos_theme') === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#e6e6e6');
+      }
+    } catch (error) {}
+  </script>
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Ithaa">
+  <title>Waiter</title>
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="../icon-192.png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="app.css?v=59">
+</head>
+<body>
+  <div id="turn" role="alert">
+    <p>Hold the phone upright</p>
+    <p class="sub">ফোন সোজা করে ধরুন</p>
+  </div>
+  <div id="app"></div>
+  <script src="../pwa.js"></script>
+  <script src="app.js?v=78"></script>
+</body>
+</html>

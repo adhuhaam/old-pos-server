@@ -1,0 +1,32 @@
+# Local runtime / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_ed25519
+id_ed25519.pub
+
+# Uploaded media (receipts, item photos, payment slips)
+data/uploads/
+data/uploads/**
+
+# Live database dumps (schema lives under database/)
+*.sql
+!database/*.sql
+database backup.sql
+
+# Archives and OS junk
+*.zip
+*.rar
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor / tooling
+.idea/
+.vscode/
+*.swp
+*.tmp
+node_modules/
+vendor/
